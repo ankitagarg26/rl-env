@@ -8,8 +8,20 @@ In the given example code, the agent is trained using feUdal Network. These file
 
 
 ### Files 
-
 What are all the files and what they do? 
+
+- **train.py**, script to train agent including:
+  - Save model
+  - Save rewards in NumPy format 
+  - Stop and restart training
+- **evaluate.py**, script to evaluate model including:
+  - Act by sampling or argmax
+  - Save rewards in NumPy format
+- **model.py**, code to define network architectures including:
+- **algos.py**, including:
+  - feUdal Network algorithm implementation
+  - functions for returning next action and 
+ 
 
 
 ### Example of use 
