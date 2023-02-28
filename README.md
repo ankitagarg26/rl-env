@@ -7,23 +7,20 @@ TO-DO: add an image for minigrid environment
 In the given example code, the agent is trained using feUdal Network. These files can be easily modified to add different RL algorithms.
 
 
-### Files 
-What are all the files and what they do? 
+### Files and Folders 
 
-- **train.py**, script to train agent including:
-  - Save model
-  - Save rewards in NumPy format 
-  - Stop and restart training
-- **evaluate.py**, script to evaluate model including:
-  - Act by sampling or argmax
-  - Save rewards in NumPy format
-- **model.py**, code to define network architectures including:
-- **algos.py**, including:
-  - feUdal Network algorithm implementation
-  - functions for returning next action and 
+`/train.py`: script to train agent. 
+
+`/evaluate.py`: script to evaluate model.
+
+After training or evaluation the output gets saved in the `Results/` folder.
+
+`/algos.py`: contains feUdal Network implementation. 
+
+`model/`: contains code to define neural network architectures required for algorithm implementation.
+
+`envs/`: contains code required to customize the environment.  
  
-
-
 ### Example of use 
 
 commands to start the docker container and run the scripts.
