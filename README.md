@@ -21,10 +21,25 @@ After training or evaluation the output gets saved in the `Results/` folder.
 
 `envs/`: contains code required to customize the environment.  
  
-### Example of use 
+### Example of Use
 
-commands to start the docker container and run the scripts.
+1. If using docker then download the image and launch the container: 
+```
+docker build -t rl_env_image .
+``` 
+This should enter a bash script.
 
-### Add new algorithms
+If not using docker then clone the repository and install the required python libraries. `pip3 install -r requirements.txt`
 
-Instructions on how to add new algorithms and train the agent.
+2. Train the agent.
+
+```
+python3 train.py
+```
+
+3. Evaluate agent's performance.
+```
+python3 evaluate.py
+```
+
+
