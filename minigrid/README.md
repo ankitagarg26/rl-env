@@ -21,15 +21,21 @@ After training or evaluation the output gets saved in the `Results/` folder.
 
 `envs/`: contains code required to customize the environment.  
  
-### Example of Use
+### Procedure
 
-1. If using docker then download the image and launch the container: 
+1. Clone the repository.
+```
+git clone https://github.com/ziangqin-stu/impl_data-effiient-hrl.git
+```
+
+3. If using docker then build the image and launch the container: 
 ```
 docker build -t rl_env_image .
+docker run -it rl_env_image
 ``` 
 This should enter a bash script.
 
-If not using docker then clone the repository and install the required python libraries. `pip3 install -r requirements.txt`
+If not using docker then install the required python libraries. `pip3 install -r requirements.txt`
 
 2. Train the agent.
 
