@@ -2,7 +2,9 @@
 
 This repository contains files to train and evaluate an agent on `gym-minigrid` environment. 
 
-TO-DO: add an image for minigrid environment
+<p align="center">
+    <img width="300" src="https://github.com/lcswillems/rl-starter-files/blob/master/README-rsrc/visualize-keycorridor.gif">
+</p>
 
 In the given example code, the agent is trained using feUdal Network. These files can be easily modified to add different RL algorithms.
 
@@ -48,4 +50,9 @@ python3 train.py
 python3 evaluate.py
 ```
 
+### References
+
+1.MiniGrid Documentation: https://minigrid.farama.org
+2. RL Starter Files: https://github.com/lcswillems/rl-starter-files
+3. FeUdal Networks for Hierarchical Learning: https://arxiv.org/abs/1703.01161
 
