@@ -52,7 +52,7 @@ python3 evaluate.py
 
 ### References
 
-1.MiniGrid Documentation: https://minigrid.farama.org
+1. MiniGrid Documentation: https://minigrid.farama.org
 2. RL Starter Files: https://github.com/lcswillems/rl-starter-files
 3. FeUdal Networks for Hierarchical Learning: https://arxiv.org/abs/1703.01161
 
