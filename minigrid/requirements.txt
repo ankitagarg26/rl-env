@@ -1,0 +1,6 @@
+gymnasium>=0.26
+matplotlib>=3.0
+minigrid
+gym-minigrid==1.0.3
+gym==0.23.1
+torch==1.13.0
