@@ -148,17 +148,16 @@ if __name__ == "__main__":
         update += 1
 
         # Print logs
-        if update % args.log_interval == 0:
-            fps = logs["num_episodes"] / (update_end_time - update_start_time)
+        if update % args.log_interval == 0:            
             duration = int(time.time() - start_time)
             return_per_episode = logs["return_per_episode"]
             num_steps_per_episode = logs["num_steps_per_episode"]
 
-            header = ["update", "epoch", "steps", "duration", "returns", "num_steps"]
-            data = [update, num_episodes, fps, duration, return_per_episode, num_steps_per_episode]
+            header = ["update", "epoch", "duration", "returns", "num_steps"]
+            data = [update, num_episodes, duration, return_per_episode, num_steps_per_episode]
 
             txt_logger.info(
-                "update {} | epoch {} | steps {} | duration {} | returns {:.2f} | num_steps {}"
+                "update {} | epoch {} | duration {} | returns {:.2f} | num_steps {}"
                 .format(*data))
 
 
