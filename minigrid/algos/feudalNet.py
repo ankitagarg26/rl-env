@@ -44,14 +44,14 @@ class FeudalNetAlgo(BaseAlgo):
         self.s_list = []
                 
         state_M, state_W = self.feudal_net.init_state() #initilializing states
-        
+
         for step in range(0, num_internal_steps):
             # reshaping observation for model input
             obs = obs.transpose(2,0,1)
 
             obs = torch.from_numpy(obs).unsqueeze(0).to(torch.float32)
 
-            probs, value_manager, g, s, states_M, value_worker, states_W = self.feudal_net(obs, state_M, state_W, self.g_list, self.c)
+            probs, value_manager, g, s, state_M, value_worker, state_W = self.feudal_net(obs, state_M, state_W, self.g_list, self.c)
 
             self.s_list.append(s)
 
@@ -159,7 +159,7 @@ class FeudalNetAlgo(BaseAlgo):
             obs = obs.transpose(2,0,1)
             obs = torch.from_numpy(obs).unsqueeze(0).to(torch.float32)
 
-            value_manager, g, s, states_M, value_worker, probs, states_W = self.feudal_net(obs, state_M, state_W, self.g_list, self.c)
+            value_manager, g, s, state_M, value_worker, probs, state_W = self.feudal_net(obs, state_M, state_W, self.g_list, self.c)
 
             m = Categorical(probs=probs)
             action = m.sample()

@@ -89,7 +89,7 @@ class dLSTM(nn.Module):
         
         self.tick = self.tick + 1
         
-        return out[:, left: right], states
+        return out[:, left: right], (out, states)
     
 class Manager_dLSTM(nn.Module):
     def __init__(self, d, r):
@@ -106,6 +106,7 @@ class Manager_dLSTM(nn.Module):
 
     def forward(self, z, states_M, reset_value_grad):
         s = self.f_Mspace(z)
+        
         g_hat, states_M = self.f_Mrnn(s, states_M)
 
         g = F.normalize(g_hat)
@@ -138,7 +139,7 @@ class Manager(nn.Module):
 
         value = self.value_function(g_hat)
 
-        return value, g, s, states_M
+        return value, g, s, (g_hat, states_M)
 
     def init_state(self, batch_size=1):
         return (
