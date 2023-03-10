@@ -1,0 +1,8 @@
+train.py --algo=hdqn --env=MiniGrid-Exp-V2-10x10
+
+Namespace(algo='hdqn', alpha=0.8, decay_high=20000, decay_low=10000, env='MiniGrid-Exp-V2-10x10', epochs=5, gamma_manager=0.99, gamma_worker=0.99, learning_rate=0.0003, log_interval=1, lr_high=0.0004, lr_low=5e-05, max_grad_norm=0.5, model=None, num_internal_steps=400, recurrence=4, save_interval=10, seed=1)
+
+Environments loaded
+
+Training status loaded
+

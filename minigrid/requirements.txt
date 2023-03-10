@@ -3,4 +3,8 @@ matplotlib>=3.0
 minigrid
 gym-minigrid==1.0.3
 gym==0.23.1
-torch==1.13.0
+torch==1.13.1
+tensorboardX>=1.6
+tensorboard>=1.6
+torchvision==0.14.1
+tqdm==4.65.0

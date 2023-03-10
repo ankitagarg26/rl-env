@@ -1,0 +1,8 @@
+update,epoch,steps,duration,returns,num_steps
+1,1,0.09744789360873882,10,-4.625900000000001,6251
+update,epoch,steps,duration,returns,num_steps
+2,2,0.003038329781981976,339,-21.762800000000002,25292
+update,epoch,steps,duration,returns,num_steps
+3,3,0.00021532561123101742,4983,-275.31080000000003,307012
+update,epoch,steps,duration,returns,num_steps
+4,4,0.0004971641211517919,6994,-118.826,133140

@@ -1,0 +1,17 @@
+train.py --algo=feudal --env=MiniGrid-Exp-V2-10x10
+
+Namespace(algo='feudal', alpha=0.8, decay_high=20000, decay_low=10000, env='MiniGrid-Exp-V2-10x10', epochs=5, gamma_manager=0.99, gamma_worker=0.99, learning_rate=0.0003, log_interval=1, lr_high=0.0004, lr_low=5e-05, max_grad_norm=0.5, model=None, num_internal_steps=400, recurrence=4, save_interval=10, seed=1)
+
+Environments loaded
+
+Training status loaded
+
+Model loaded
+
+Optimizer loaded
+
+update 1 | epoch 1 | steps 0.24891218600333034 | duration 4 | returns 0.00 | num_steps 399 | manager_loss 1.072 | worker_loss 5952.808
+update 2 | epoch 2 | steps 0.2505118875819495 | duration 8 | returns 0.00 | num_steps 399 | manager_loss 1.071 | worker_loss 3326.259
+update 3 | epoch 3 | steps 0.24897313445735508 | duration 12 | returns 0.00 | num_steps 399 | manager_loss 2.256 | worker_loss 13824.871
+update 4 | epoch 4 | steps 0.24880569760529714 | duration 16 | returns 0.00 | num_steps 399 | manager_loss 1.602 | worker_loss 4305.225
+update 5 | epoch 5 | steps 0.24598514366801896 | duration 20 | returns 0.00 | num_steps 399 | manager_loss 0.984 | worker_loss 758.704

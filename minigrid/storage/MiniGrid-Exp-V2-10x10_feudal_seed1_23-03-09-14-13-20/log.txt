@@ -1,0 +1,17 @@
+train.py --algo=feudal --env=MiniGrid-Exp-V2-10x10
+
+Namespace(algo='feudal', alpha=0.8, env='MiniGrid-Exp-V2-10x10', epochs=5, gamma_manager=0.99, gamma_worker=0.99, learning_rate=0.0003, log_interval=1, max_grad_norm=0.5, model=None, num_internal_steps=400, recurrence=4, save_interval=10, seed=1)
+
+Environments loaded
+
+Training status loaded
+
+Model loaded
+
+Optimizer loaded
+
+update 1 | epoch 1 | steps 0.25832643578654424 | duration 3 | returns:μσmM 0.00 0.00 0.00 0.00 | num_steps:μσmM 399.0 0.0 399 399 | entropy_loss 1.949 | manager_loss 1.072 | worker_loss 5952.808
+update 2 | epoch 2 | steps 0.25255538745173706 | duration 7 | returns:μσmM 0.00 0.00 0.00 0.00 | num_steps:μσmM 399.0 0.0 399 399 | entropy_loss 1.953 | manager_loss 1.071 | worker_loss 3326.259
+update 3 | epoch 3 | steps 0.25456610792019513 | duration 11 | returns:μσmM 0.00 0.00 0.00 0.00 | num_steps:μσmM 399.0 0.0 399 399 | entropy_loss 1.954 | manager_loss 2.256 | worker_loss 13824.871
+update 4 | epoch 4 | steps 0.2548200419845434 | duration 15 | returns:μσmM 0.00 0.00 0.00 0.00 | num_steps:μσmM 399.0 0.0 399 399 | entropy_loss 1.954 | manager_loss 1.602 | worker_loss 4305.225
+update 5 | epoch 5 | steps 0.2527616761524772 | duration 19 | returns:μσmM 0.00 0.00 0.00 0.00 | num_steps:μσmM 399.0 0.0 399 399 | entropy_loss 1.954 | manager_loss 0.984 | worker_loss 758.704

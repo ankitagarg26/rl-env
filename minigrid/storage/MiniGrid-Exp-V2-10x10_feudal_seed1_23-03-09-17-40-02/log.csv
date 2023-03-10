@@ -1,0 +1,10 @@
+update,epoch,steps,duration,returns,num_steps,manager_loss,worker_loss
+1,1,0.24891218600333034,4,0,399,1.0719,5952.8081
+update,epoch,steps,duration,returns,num_steps,manager_loss,worker_loss
+2,2,0.2505118875819495,8,0,399,1.0708,3326.259
+update,epoch,steps,duration,returns,num_steps,manager_loss,worker_loss
+3,3,0.24897313445735508,12,0,399,2.2558,13824.8711
+update,epoch,steps,duration,returns,num_steps,manager_loss,worker_loss
+4,4,0.24880569760529714,16,0,399,1.6019,4305.2251
+update,epoch,steps,duration,returns,num_steps,manager_loss,worker_loss
+5,5,0.24598514366801896,20,0,399,0.9843,758.704

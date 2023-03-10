@@ -41,7 +41,7 @@ WORKDIR /home/minigrid/
 COPY ./ /home/minigrid/
 
 # Copy over the start-up script
-ADD scripts/startup_script.sh /usr/local/bin/startup_script.sh
+ADD startup_script.sh /usr/local/bin/startup_script.sh
 
 # Give permissions to execute
 RUN chmod 777 /usr/local/bin/startup_script.sh

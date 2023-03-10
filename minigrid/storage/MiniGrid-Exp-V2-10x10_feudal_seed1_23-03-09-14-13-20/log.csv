@@ -1,0 +1,10 @@
+update,epoch,steps,duration,return_mean,return_std,return_min,return_max,num_steps_mean,num_steps_std,num_steps_min,num_steps_max,entropy_loss,manager_loss,worker_loss
+1,1,0.25832643578654424,3,0.0,0.0,0,0,399.0,0.0,399,399,1.9490641,1.0719,5952.8081
+update,epoch,steps,duration,return_mean,return_std,return_min,return_max,num_steps_mean,num_steps_std,num_steps_min,num_steps_max,entropy_loss,manager_loss,worker_loss
+2,2,0.25255538745173706,7,0.0,0.0,0,0,399.0,0.0,399,399,1.9530951,1.0708,3326.259
+update,epoch,steps,duration,return_mean,return_std,return_min,return_max,num_steps_mean,num_steps_std,num_steps_min,num_steps_max,entropy_loss,manager_loss,worker_loss
+3,3,0.25456610792019513,11,0.0,0.0,0,0,399.0,0.0,399,399,1.9541626,2.2558,13824.8711
+update,epoch,steps,duration,return_mean,return_std,return_min,return_max,num_steps_mean,num_steps_std,num_steps_min,num_steps_max,entropy_loss,manager_loss,worker_loss
+4,4,0.2548200419845434,15,0.0,0.0,0,0,399.0,0.0,399,399,1.9540589,1.6019,4305.2251
+update,epoch,steps,duration,return_mean,return_std,return_min,return_max,num_steps_mean,num_steps_std,num_steps_min,num_steps_max,entropy_loss,manager_loss,worker_loss
+5,5,0.2527616761524772,19,0.0,0.0,0,0,399.0,0.0,399,399,1.9544519,0.9843,758.704
