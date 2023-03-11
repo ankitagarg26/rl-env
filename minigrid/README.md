@@ -25,7 +25,7 @@
 
  1. Clone the repository.
  ```
- git clone https://github.com/ziangqin-stu/impl_data-effiient-hrl.git
+ git clone https://github.com/ankitagarg26/rl-env.git
  ```
 
  3. If using docker then build the image and launch the container: 
