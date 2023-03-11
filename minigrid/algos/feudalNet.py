@@ -143,35 +143,3 @@ class FeudalNetAlgo(BaseAlgo):
         }
 
         return logs
-
-        
-    def evaluate(self, max_steps):
-        
-        obs = self.env.reset()[0]
-        state_M, state_W = self.feudal_net.init_state() #initilializing states
-        
-        self.g_list = []
-        
-        reward_high = 0
-        steps = 0
-        while True:
-
-            obs = obs.transpose(2,0,1)
-            obs = torch.from_numpy(obs).unsqueeze(0).to(torch.float32)
-
-            value_manager, g, s, state_M, value_worker, probs, state_W = self.feudal_net(obs, state_M, state_W, self.g_list, self.c)
-
-            m = Categorical(probs=probs)
-            action = m.sample()
-            log_prob = m.log_prob(action)
-            obs_new, reward_env, done, terminate, info = self.env.step(action)
-
-            reward_high += reward_env
-            steps += 1
-
-            if done or steps >= max_steps:
-                break
-
-            obs = obs_new
-        
-        return reward_high, steps
