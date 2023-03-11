@@ -26,12 +26,13 @@
  1. Clone the repository.
  ```
  git clone https://github.com/ankitagarg26/rl-env.git
+ cd minigrid
  ```
 
  3. If using docker then build the image and launch the container: 
  ```
- docker build -t rl_env_image .
- docker run -it rl_env_image
+ docker load < minigrid_image.tar.gz
+ docker run -it minigrid_image
  ``` 
  This should enter a bash script.
 
@@ -42,7 +43,7 @@
 Example of use
 
  ```
- python3 train.py --algo=feudal --env=MiniGrid-Exp-V2-10x10 --epochs=2500 --save-interval=10
+ python3 train.py --algo=feudal --env=MiniGrid-Exp-V2-10x10 --epochs=5000 --save-interval=10
  ```
 The script trains the model on FeUdal Network using the MiniGrid environment for 2500 episodes and saves it every 10 updates.
 
@@ -55,3 +56,4 @@ During training, logs are also plotted in Tensorboard:
  1. MiniGrid Documentation: https://minigrid.farama.org
  2. RL Starter Files: https://github.com/lcswillems/rl-starter-files
  3. FeUdal Networks for Hierarchical Learning: https://arxiv.org/abs/1703.01161
+ 4. Hierarchical Deep Reinforcement Learning: Integrating Temporal Abstraction and Intrinsic Motivation: https://arxiv.org/abs/1604.06057
