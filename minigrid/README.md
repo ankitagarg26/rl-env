@@ -49,7 +49,11 @@ The script trains the model on FeUdal Network using the MiniGrid environment for
 
 During training, logs are printed in the terminal (and saved in text and CSV format):
 
+<p><img src="terminal_output.png" width=500 height=300 ></p>
+
 During training, logs are also plotted in Tensorboard:
+
+<p><img src="tensorboard.png" width=300 height=300></p>
 
  ### References
 
