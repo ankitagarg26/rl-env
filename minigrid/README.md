@@ -31,7 +31,7 @@
 
  3. If using docker then build the image and launch the container: 
  ```
- docker load < minigrid_image.tar.gz
+ docker build -t minigrid_image
  docker run -it minigrid_image
  ``` 
  This should enter a bash script.
