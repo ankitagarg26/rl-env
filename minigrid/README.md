@@ -55,6 +55,16 @@ During training, logs are also plotted in Tensorboard:
 
 <p><img src="tensorboard.png" width=300 height=300></p>
 
+### Add new algorithms
+
+1. Create a new file defining required networks architectures and add it to folder `/model`.
+2. Add a new file to folder `/algos` defining functions: `collect_experiences` and `update_parameters`.
+3. Modfiy train.py file to add support for the new algorithm.
+
+### Create customized environment
+
+Create a class inheriting MiniGrid class and depending on the requirements, define the function `_gen_grid` in it. For further details, refer to file `envs\envs.py`. 
+
  ### References
 
  1. MiniGrid Documentation: https://minigrid.farama.org
